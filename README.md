@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+Requirements
+
+1)	I need a Angular 7 module where I can inject in to my application.(Done)
+2)	Should support all file formats such as Dicom(DWV), PNG, JPEG.(Done)
+3)	Must be able to upload single and multiple files and must show the thumbnails.(Done)
+4)	I must be able to interact with the images using all cornerstone tools such Zoom, Pan, Length, Angle, annotate, reset,play or CINE, ellipse, rotate, clear etc. Must see all the tools on the top of the document viewer, Thumbnails on the left.(Done)
+5)	Must be able to download after making changes using the tools in PNG format(Done)
