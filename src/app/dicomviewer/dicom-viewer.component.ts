@@ -414,7 +414,8 @@ export class DICOMViewerComponent implements OnInit {
       var collectImagesFromLoader = (index) => {
         const dicomFile: File = fileList[index];
         var fr = new FileReader();
-        if(dicomFile.type) {
+        var dType = dicomFile.type || '';
+        if(dType.match(/image/g) && dType.indexOf('.dcm') === -1) {
           fr.onload = () => {
               var blob = new Blob( [fr.result], { type: 'image/jpeg' });
               var urlCreator = window.URL;

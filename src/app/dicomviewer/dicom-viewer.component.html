@@ -28,7 +28,7 @@
             <div class="btn-group">
                 <div class="btn-group" *ngIf="enableViewerTools">
 
-                    <input id="fileLoader" style="display: none" class="hide_file" type="file" multiple accept="application/dicom" id="imagens" title=""
+                    <input id="fileLoader" style="display: none" class="hide_file" type="file" multiple id="imagens" title=""
                         (change)="loadDICOMImages($event.target.files)" #photoInput>
 
                     <button type="button" (click)="photoInput.click()" class="btn btn-sm btn-default" data-container='body'
